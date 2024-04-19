@@ -1,0 +1,28 @@
+<div class="row filter p-5">
+    <div class="col-12">
+        <form class="row p-4  align-items-center container-filter">
+            <div class="col-sm-3 col-md-3">
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <select class="form-select" class="form-control" placeholder="Busqueda" aria-label="Default select example" id="item-input" #newItem>
+                    <option selected value="">Seleccione un album a filtrar</option>
+                    <option value="1">Album 1</option>
+                    <option value="2">Album 2</option>
+                    <option value="3">Album 3</option>
+                    <option value="4">Album 4</option>
+                    <option value="5">Album 5</option>
+                    <option value="6">Album 6</option>
+                    <option value="7">Album 7</option>
+                    <option value="8">Album 8</option>
+                    <option value="9">Album 9</option>
+                    <option value="10">Album 10</option>
+                  </select>
+            </div>
+            <div class="col-sm-3 col-md-3">
+                <button class="btn btn-primary" type="button" (click)="submit(newItem.value)">Buscar</button>
+            </div>
+            <div class="col-sm-3 col-md-3">
+            </div>
+        </form>
+    </div>
+</div>

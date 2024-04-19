@@ -1,0 +1,57 @@
+.modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 500px;
+    height: 100%;
+    right: 0px;
+    background-color: #F6F3F1;
+    border: none;
+}
+
+.modal-header {
+    border: none;
+    background-color: #F6F3F1;
+}
+
+.modal-content {
+    height: 100%;
+    background-color: #F6F3F1;
+    border: none;
+}
+
+.modal-footer {
+    background-color: #F6F3F1;
+    border: none;
+}
+
+.text-black {
+    color: black;
+}
+
+.btn {
+    box-shadow: none;
+    outline: none;
+}
+
+button.btn:focus {
+    border-width: 0;
+}
+
+.form-control {
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-radius: 0%;
+}
+
+.btn-primary {
+    height: 50px;
+    background-color: #B4061E;
+    border: none;
+    border-radius: 0%;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #18191e;
+}

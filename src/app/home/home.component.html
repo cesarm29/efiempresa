@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <app-header></app-header>
+    <app-navbar></app-navbar>
+    <app-modal (newItemEvent)="searchPhotoByAlbum($event)"></app-modal>
+    <app-image></app-image>
+    <app-filter (newItemEvent)="searchPhotoByAlbum($event)"></app-filter>
+    <div *ngIf="!dataFilterPhoto">
+        <div class="row p-5">
+            <div *ngFor="let content of dataPhoto" class="col-sm-2 col-md- p-2">
+                <app-card [photo]="content"></app-card>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div *ngFor="let content of dataPhoto" class="col-sm-2 col-md-2 p-2">
+                <app-card-description [photo]="content"></app-card-description>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="dataFilterPhoto">
+        <div class="row p-5">
+            <div *ngFor="let content of dataFilterPhoto" class="col-sm-2 col-md-2 p-2">
+                <app-card [photo]="content"></app-card>
+            </div>
+        </div>
+        <div class="row p-5">
+            <div *ngFor="let content of dataFilterPhoto" class="col-sm-2 col-md-2 p-2">
+                <app-card-description [photo]="content"></app-card-description>
+            </div>
+        </div>
+    </div>
+    <app-offer></app-offer>
+    <app-newsletter></app-newsletter>
+    <app-information></app-information>
+    <app-footer></app-footer>
+</div>

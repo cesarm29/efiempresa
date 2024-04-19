@@ -1,0 +1,49 @@
+<div class="modal fade right" id="inputInv" tabindex="-1" aria-labelledby="InputInventory" aria-hidden="true"
+    data-bs-backdrop="static">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header d-flex align-items-center justify-content-end px-5">
+                <div class="row">
+                    <div class="col">
+                        <i class="fa fa-times fa-3x" data-bs-dismiss="modal"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body px-5">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="modal-title" id="InputInventory">Filtros</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col py-3">
+                        <select class="form-select" class="form-control" placeholder="Busqueda"
+                            aria-label="Default select example" id="item-input" #newItem>
+                            <option selected value="">Seleccione un album a filtrar</option>
+                            <option value="1">Album 1</option>
+                            <option value="2">Album 2</option>
+                            <option value="3">Album 3</option>
+                            <option value="4">Album 4</option>
+                            <option value="5">Album 5</option>
+                            <option value="6">Album 6</option>
+                            <option value="7">Album 7</option>
+                            <option value="8">Album 8</option>
+                            <option value="9">Album 9</option>
+                            <option value="10">Album 10</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col py-3">
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-primary" data-bs-dismiss="modal" type="button"
+                                (click)="submit(newItem.value)">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+            </div>
+        </div>
+    </div>
+</div>
